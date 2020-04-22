@@ -236,7 +236,7 @@ class DysonPureCoolLink(DysonDevice):
 
         f_mode = fan_mode.value if fan_mode \
             else self._current_state.fan_mode
-        f_speed = fan_speed.value if fan_speed \
+        f_speed = fan_speed if fan_speed \
             else self._current_state.speed
         f_oscillation = oscillation.value if oscillation \
             else self._current_state.oscillation
